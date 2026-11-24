@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0d10">
+<title>NOTFOMO GOLD AI — Gold Market Intelligence</title>
+<style>
+:root{--bg:#0b0d10;--panel:#12161b;--panel2:#171c22;--line:#252c34;--text:#f1f3f5;--muted:#929ba6;--gold:#e4b84f;--green:#39c58a;--red:#ef6969;--amber:#e7ad45}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#302617 0,transparent 36%),var(--bg);color:var(--text);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+.wrap{max-width:1280px;margin:auto;padding:28px 22px 50px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}.brand{display:flex;align-items:center;gap:12px}.logo{width:43px;height:43px;border-radius:13px;background:linear-gradient(145deg,#f3d17c,#b78024);display:grid;place-items:center;color:#17130b;font-size:23px;font-weight:900}.brandname{font-weight:850;letter-spacing:.12em;font-size:16px}.brandname span{display:block;color:var(--gold);font-size:11px;letter-spacing:.22em}.status{border:1px solid #6d5526;color:#f1cb70;background:#2a2112;border-radius:99px;padding:6px 11px;font-size:11px;letter-spacing:.1em}
+h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:0 0 8px;letter-spacing:-.04em}.sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;gap:15px}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:15px}.card{background:linear-gradient(180deg,#151a20,#11151a);border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0}.eyebrow{font-size:10px;letter-spacing:.15em;color:var(--muted);font-weight:750}.metric{font-size:25px;font-weight:780;letter-spacing:-.04em;margin:7px 0 2px}.hint{color:var(--muted);font-size:12px}.gold{color:var(--gold)}.green{color:var(--green)}.amber{color:var(--amber)}
+.main{grid-template-columns:minmax(0,1.55fr) minmax(290px,.85fr);align-items:start}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}.sectionhead h2{font-size:15px;margin:0;letter-spacing:.01em}.tag{font-size:10px;color:#d7b967;background:#2b2417;border:1px solid #514022;border-radius:99px;padding:4px 8px}
+.signal{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#1b1b17;border:1px solid #514326;border-radius:13px;padding:16px;margin:12px 0}.signal strong{display:block;font-size:27px;letter-spacing:.03em;color:var(--gold)}.signal small{color:var(--muted)}.pill{border-radius:99px;padding:5px 9px;font-size:10px;font-weight:750;letter-spacing:.08em;background:#282d33;color:#bdc5ce}
+.explain{color:#c4cbd3;font-size:13px;margin:12px 0 0}.factors{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:15px}.factor{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:11px}.factor b{display:block;font-size:12px}.factor span{font-size:11px;color:var(--muted)}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0 13px}.tab{border:1px solid var(--line);background:#11161b;color:#aeb7c1;border-radius:9px;padding:8px 12px;cursor:pointer}.tab.active{background:#332817;border-color:#795e2b;color:#f3ce77}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.select{background:#11161b;color:var(--text);border:1px solid var(--line);padding:8px 10px;border-radius:9px}
+.event,.newsitem{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:13px 0;border-top:1px solid var(--line)}.event:first-child,.newsitem:first-child{border-top:0}.event b,.newsitem b{font-size:13px}.event small,.newsitem small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.impact{white-space:nowrap;font-size:10px;font-weight:750;border-radius:6px;padding:5px 7px}.high{background:#3b2020;color:#ff9a9a}.medium{background:#392e1b;color:#edc36d}.low{background:#1c3028;color:#83d6ad}
+.disclaimer{margin-top:17px;padding:12px 14px;border:1px solid var(--line);border-radius:11px;color:var(--muted);font-size:11px}.empty{padding:22px;text-align:center;color:var(--muted);border:1px dashed #343d47;border-radius:11px;font-size:12px}
+footer{color:#6f7882;text-align:center;font-size:10px;letter-spacing:.12em;margin-top:30px}
+@media(max-width:850px){.metrics{grid-template-columns:repeat(2,1fr)}.main{grid-template-columns:1fr}}@media(max-width:480px){.wrap{padding:19px 13px 35px}.metrics{gap:9px}.card{padding:14px}.metric{font-size:22px}.top{margin-bottom:22px}.brandname{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><div class="logo">₳</div><div class="brandname">NOTFOMO<span>GOLD AI</span></div></div>
+ <div class="status">● DEMO / DATA NOT CONNECTED</div>
+</header>
+<main>
+ <h1>Gold Market Intelligence</h1>
+ <p class="sub">Экономический календарь, новости и AI-аналитика рынка XAU/USD — в одном терминале.</p>
+ <section class="grid metrics">
+  <div class="card"><div class="eyebrow">ИНСТРУМЕНТ</div><div class="metric">XAU/USD</div><div class="hint">Gold / US Dollar</div></div>
+  <div class="card"><div class="eyebrow">AI MARKET BIAS</div><div class="metric amber">WAIT</div><div class="hint">Нет подтверждённых live-данных</div></div>
+  <div class="card"><div class="eyebrow">ПОСЛЕДНЯЯ ЦЕНА</div><div class="metric">—</div><div class="hint">Источник котировок не подключён</div></div>
+  <div class="card"><div class="eyebrow">УВЕРЕННОСТЬ AI</div><div class="metric">—</div><div class="hint">Не рассчитывается без данных</div></div>
+ </section>
+ <section class="grid main">
+  <div class="card">
+   <div class="sectionhead"><h2>AI GOLD ANALYST</h2><span class="tag">ANALYSIS ENGINE</span></div>
+   <div class="signal"><div><small>ТЕКУЩИЙ СЦЕНАРИЙ</small><strong>WAIT</strong><small>Ожидание подключения рыночных данных</small></div><span class="pill">NO SIGNAL</span></div>
+   <p class="explain">Система пока не выдаёт LONG или SHORT: котировки, календарь и новостная лента ещё не подключены. Это защищает от вымышленных торговых сигналов.</p>
+   <div class="factors">
+    <div class="factor"><b>DXY / USD</b><span>Ожидает данные</span></div>
+    <div class="factor"><b>US 10Y YIELD</b><span>Ожидает данные</span></div>
+    <div class="factor"><b>FED / RATES</b><span>Ожидает данные</span></div>
+    <div class="factor"><b>GOLD MOMENTUM</b><span>Ожидает данные</span></div>
+   </div>
+   <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="calendar">Экономический календарь</button>
+    <button class="tab" data-tab="news">Новости</button>
+    <button class="tab" data-tab="history">История сигналов</button>
+   </div>
+   <div id="calendar" class="tabcontent">
+    <div class="toolbar"><b>Ближайшие события</b><select class="select" id="impactFilter"><option value="all">Все события</option><option value="high">Высокая важность</option><option value="medium">Средняя важность</option></select></div>
+    <div id="events"><div class="empty">Экономический календарь подключается после настройки источника данных.<br>События и время не подставляются фиктивно.</div></div>
+   </div>
+   <div id="news" class="tabcontent" hidden>
+    <div class="toolbar"><b>Новостная лента</b><span class="tag">AI SENTIMENT</span></div>
+    <div class="empty">Новостной API ещё не подключён.<br>После подключения AI будет классифицировать влияние новости на золото: bullish, bearish или neutral.</div>
+   </div>
+   <div id="history" class="tabcontent" hidden>
+    <div class="toolbar"><b>История прогнозов</b><span class="tag">PERFORMANCE</span></div>
+    <div class="empty">История появится после запуска сигналов.<br>Будем сохранять время, направление, цену входа и результат на горизонтах 1H, 4H и 24H.</div>
+   </div>
+  </div>
+  <aside class="card">
+   <div class="sectionhead"><h2>TRADE PLAN</h2><span class="tag">XAU/USD</span></div>
+   <div class="event"><div><b>Направление</b><small>LONG / SHORT / WAIT</small></div><span class="pill">WAIT</span></div>
+   <div class="event"><div><b>Entry</b><small>Цена входа</small></div><span class="hint">—</span></div>
+   <div class="event"><div><b>Stop Loss</b><small>Уровень риска</small></div><span class="hint">—</span></div>
+   <div class="event"><div><b>Take Profit</b><small>Цели</small></div><span class="hint">—</span></div>
+   <div class="event"><div><b>Risk / Reward</b><small>Соотношение</small></div><span class="hint">—</span></div>
+   <div class="disclaimer"><b>Важно:</b> торговые уровни будут рассчитываться только при наличии актуальной цены и подтверждённого сценария. Сигналы — аналитические оценки, не гарантия результата.</div>
+  </aside>
+ </section>
+</main>
+<footer>NOTFOMO GOLD AI · READ THE MARKET. NOT THE NOISE.</footer>
+</div>
+<script>
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===btn));
+ document.querySelectorAll('.tabcontent').forEach(x=>x.hidden=x.id!==btn.dataset.tab);
+}));
+</script>
+</body>
+</html>
